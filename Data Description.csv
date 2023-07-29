@@ -1,0 +1,24 @@
+Variable,Description,Data Types
+unique_key,Unique identifier for the trip,string
+taxi_id,Unique identifier for the taxi,string
+trip_start_timestamp,"when the trip started, rounded to the nearest 15 minutes",timestamp
+trip_end_timestamp,"when the trip ended, rounded to the nearest 15 minutes",timestamp
+trip_seconds,time of the trip in seconds,integer
+trip_miles,distance of the trip in miles,float
+pickup_census_tract,"the Census Tract where the trip began. for privacy, the Census Tract us not shown for some trips",integer
+dropoff_census_tract,"the Census Tract where the trip ended. for privacy, the Census Tract us not shown for some trips",integer
+pickup_community_area,the Community Area where the trip began,integer
+dropoff_community_area,the Community Area where the trip ended,integer
+fare,the fare for the trip,float
+tips,the tip for the trip. cash tips generally will not be recorded,float
+tolls,the tolls for the trip,float
+extras,extras charges for the trip,float
+trip_total,"total cost of the trip, the total of the fare, tips, tolls, and extras",float
+payment_type,type of payment for the trip,string
+company,the taxi company,string
+pickup_latitude,the latitude of the center of the pickup census tract or the community area if the census tract has been hidden for privacy,float
+pickup_longitude,the longitude of the center of the pickup census tract or the community area if the census tract has been hidden for privacy,float
+pickup_location,the longitude of the center of the pickup census tract or the community area if the census tract has been hidden for privacy,string
+dropoff_latitude,the latitude of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy,float
+dropoff_longitude,the longitude of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy,float
+dropoff_location,the longitude of the center of the dropoff census tract or the community area if the census tract has been hidden for privacy,string
